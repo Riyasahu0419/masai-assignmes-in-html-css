@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grid Layout</title>
+</head>
+<style>
+      
+ *{
+        margin: 10px;
+       
+        
+    }
+   #container{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid teal;
+    margin: auto;
+    gap: 20px;
+    
+   }
+   #container>div{
+    border: 1px solid red;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow:1px 0px 9px;
+   }
+   @media all and (min-width:400px) and (max-width:700px){
+        #container{
+            grid-template-columns: repeat(3,1fr);
+        }
+   }
+   @media all and (min-width:200px) and (max-width:399px){
+        #container{
+            grid-template-columns: repeat(2,1fr);
+        }
+   }
+   p{
+    font-size: 23px;
+    padding-left: 20px;
+}
+h1{
+    padding: 20px;
+}
+
+
+
+   
+   
+
+</style>
+<body>
+    <div id="container">
+        <div>
+            <h1>cappuccino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Americano&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Aspresso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Macchiato&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Mocha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Coffi Latte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Piccolo Latte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Ristretto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+        
+        <div>
+            <h1>Affogato&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color: rgb(182,136,52);">$49</span></h1>
+            <p>Usage of internet is becoming more common due to rapid advance</p>
+        </div>
+    </div>
+</body>
+</html>
